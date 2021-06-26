@@ -1,3 +1,13 @@
+/* Arduino code to measure position and orientation with a BNO055 IMU
+Amber Hunt
+Saimah Siddiqui
+June 2021
+Tested on an Arduino Uno
+References: 
+https://gist.github.com/Happsson/bffb41f083b3bb2d88af2b2e27cb3372
+https://stackoverflow.com/questions/5782658/extracting-yaw-from-a-quaternion#:~:text=Having%20given%20a%20Quaternion%20q,*q.y%20%2D%20q.z*q.z)%3B
+*/
+
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BNO055.h>
