@@ -1,0 +1,24 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LP38500SD
+D Low dropout 1.5A LDO variable output voltage, WSON-8
+K linear low dropout Regulator adjustable
+F https://www.ti.com/lit/ds/symlink/lp38500-adj.pdf
+$ENDCMP
+#
+$CMP RFFM6406
+D 408 - 455 MHz, 2.5 - 4.2 V, 1.5 Watt ISM Band Transmit / Receive Module
+F https://www.qorvo.com/products/p/RFFM6406
+$ENDCMP
+#
+$CMP SF2446E
+D 435 MHz SAW Filter, 23 MHz Bandwidth
+F https://www.rfmi.co/pdf/Datasheet/sf2446e.pdf
+$ENDCMP
+#
+$CMP VCC_3V6
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+#End Doc Library
