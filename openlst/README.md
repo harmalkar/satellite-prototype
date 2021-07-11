@@ -3,10 +3,33 @@
 OpenLST board for SEDS@UMD modified by Nathan Kerns. The latest version of Kicad 6 Nightlies is required to view or modify the design. Recent pdf exports of the PCB and schematic are available in the pdf folder, but may not be completely up to date.
 
 TODO:
-* Sort out power supply
-* Change components based on availability
+* Finalize BOM
+* Update PCB
 
-## Original readme
+## Power Budgets
+
+3.3 V - 85 mA
+
+* CC1110 - 50 mA max
+* ASFL1-27MHz - 15 mA max
+* TLV803S - 15 mA max
+* PE4259 - <1 mA
+* RFFM6404 - <1 mA
+
+
+4.2 V - 600 mA
+
+* RFFM6404 - 600 mA max
+
+## Frequency Range
+
+430-445 MHz
+
+* CC1110 - 391-464 MHz
+* SF2446E - 425-445 MHz
+* RFFM6404 - 430-450 MHz
+
+# Original readme
 
 OpenLST Reference Hardware
 ==========================
