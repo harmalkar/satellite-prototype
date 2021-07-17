@@ -22,6 +22,9 @@ _saved_*
 *.csv
 *.xml
 
+# Allow BOMs in bom folders
+!*/bom/*.csv
+
 # Gerbers
 *.gbr
 

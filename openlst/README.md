@@ -3,8 +3,11 @@
 OpenLST board for SEDS@UMD modified by Nathan Kerns. The latest version of Kicad 6 Nightlies is required to view or modify the design. Recent pdf exports of the PCB and schematic are available in the pdf folder, but may not be completely up to date.
 
 TODO:
-* Finalize BOM and upload to Octopart
 * Update PCB
+
+## BOM
+
+BOM is automatically generated in KiCAD using "bom_csv_grouped_by_value" script, and manually separated into formats seen in bom folder. `openlst-bom.csv` contains entire BOM, `openlst-bom-digikey.csv` contains Digikey components, and `openlst-bom-mouser.csv` contains Mouser components.
 
 ## Power Budgets
 
@@ -28,6 +31,10 @@ TODO:
 * CC1110 - 391-464 MHz
 * SF2446E - 425-445 MHz
 * RFFM6404 - 430-450 MHz
+
+## Temperature Range
+
+Constraining component is ASFL1-27MHz at -20 to 70 C
 
 # Original readme
 
