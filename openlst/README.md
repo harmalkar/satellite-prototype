@@ -36,6 +36,24 @@ BOM is automatically generated in KiCAD using "bom_csv_grouped_by_value" script,
 
 Constraining component is ASFL1-27MHz at -20 to 70 C
 
+## PCB
+
+Layers
+* F.Cu - GND plane + signals
+* In1.Cu - GND plane
+* In2.Cu - Power planes, 3V3 mainly with VAA and 3V3_FILT in relevent areas
+* B.Cu - GND plane + signals
+
+50 ohm traces
+* 6 mil (0.15 mm) clearance
+* 13.4 mil (0.34 mm) width
+* Via fence on 50x50 mil (1.27x1.27 mm) grid
+
+Other traces
+* 0.2 mm (8 mil) signal traces
+* 0.3 mm (12 mil) power traces
+* Power planes for high current paths
+
 # Original readme
 
 OpenLST Reference Hardware

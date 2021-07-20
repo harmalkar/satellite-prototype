@@ -3593,6 +3593,10 @@
     (effects (font (size 1.524 1.524)) (justify right bottom))
     (uuid dece239f-1801-451d-874a-416b5c85359c)
   )
+  (label "VAA_FILT" (at 251.46 48.26 0)
+    (effects (font (size 1.524 1.524)) (justify left bottom))
+    (uuid f00b85d8-836c-401c-9ef8-a8f62e805f20)
+  )
 
   (symbol (lib_id "openlst-hw:+3.3V") (at 15.24 129.54 0) (unit 1)
     (in_bom yes) (on_board yes)
@@ -6618,7 +6622,7 @@
     (uuid 9779f1e9-584e-4f69-b2e0-010bb1417da8)
     (property "Reference" "U3" (id 0) (at 63.5 153.67 0))
     (property "Value" "AP6502" (id 1) (at 63.5 156.21 0))
-    (property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.62x3.51mm_ThermalVias" (id 2) (at 80.01 184.15 0)
+    (property "Footprint" "openlst:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.613x3.502mm" (id 2) (at 80.01 184.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP6502.pdf" (id 3) (at 63.5 166.37 0)
@@ -7183,7 +7187,7 @@
       (reference "U2") (unit 1) (value "CC1110") (footprint "openlst:TI_CC_QFN36")
     )
     (path "/9779f1e9-584e-4f69-b2e0-010bb1417da8"
-      (reference "U3") (unit 1) (value "AP6502") (footprint "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.62x3.51mm_ThermalVias")
+      (reference "U3") (unit 1) (value "AP6502") (footprint "openlst:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.613x3.502mm")
     )
     (path "/00000000-0000-0000-0000-00005b2892be"
       (reference "U4") (unit 1) (value "ASFL1-27.000MHZ") (footprint "Oscillator:Oscillator_SMD_SeikoEpson_SG8002LB-4Pin_5.0x3.2mm")
