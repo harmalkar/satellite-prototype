@@ -1,0 +1,9 @@
+"Source:","/home/nathan/Documents/satellite-prototype/openlst/openlst-hw.kicad_sch"
+"Date:","Thu Jul 15 17:48:57 2021"
+"Tool:","Eeschema 5.99.0-unknown-e61b1f03b8~131~ubuntu20.04.1"
+"Generator:","/usr/share/kicad-nightly/plugins/bom_csv_grouped_by_value.py"
+"Component Count:","85"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","Manuf","ManufPN","Supplier","SupplierPN"
+"36","1","U8","SF2446E","openlst-hw:SF2446E","openlst:SAW-6_3.0mm","https://www.rfmi.co/pdf/Datasheet/sf2446e.pdf","RFMi","SF2446E","Mouser","198-SF2446E"
+"37","1","U9","RFFM6404","openlst-hw:RFFM6404","openlst:Qorvo_LGA_28_ThermalVias","","Qorvo","RFFM6404TR13","Mouser","772-RFFM6404TR13"

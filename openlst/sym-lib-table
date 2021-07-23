@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "openlst-hw")(type "KiCad")(uri "${KIPRJMOD}/lib_sch/openlst-hw.kicad_sym")(options "")(descr ""))
+  (lib (name "openlst-hw-rescue")(type "Legacy")(uri "${KIPRJMOD}/openlst-hw-rescue.lib")(options "")(descr ""))
+)
