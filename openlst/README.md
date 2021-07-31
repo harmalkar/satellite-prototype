@@ -41,7 +41,7 @@ Constraining component is ASFL1-27MHz at -20 to 70 C
 Layers
 * F.Cu - GND plane + signals
 * In1.Cu - GND plane
-* In2.Cu - Power planes, 3V3 mainly with VAA and 3V3_FILT in relevent areas
+* In2.Cu - Power planes
 * B.Cu - GND plane + signals
 
 50 ohm traces
