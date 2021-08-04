@@ -1,0 +1,47 @@
+PCB statistics report
+=====================
+- Date: Wed 04 Aug 2021 03:55:58 PM EDT
+- Project: openlst-hw
+- Board name: openlst-hw
+
+Board
+-----
+- Width: 50.0000 mm
+- Height: 43.0000 mm
+- Area: 2139.4142 sq. mm
+
+Pads
+----
+- Through hole: 35
+- SMD: 258
+- Connector: 0
+- NPTH: 4
+
+Vias
+----
+- Through vias: 144
+- Blind/buried: 0
+- Micro vias: 0
+
+Components
+----------
+
+|        | Front Side | Back Side | Total |
+|--------|------------|-----------|-------|
+|THT:    |         7  |        0  |    7  |
+|SMD:    |        74  |        0  |   74  |
+|Total:  |        81  |        0  |   81  |
+|        |            |           |       |
+
+Drill holes
+-----------
+
+| Count | Shape |    X Size |    Y Size | Plated | Via/Pad | Start Layer | Stop Layer |
+|-------|-------|-----------|-----------|--------|---------|-------------|------------|
+|   133 | Round | 0.2540 mm | 0.2540 mm |    PTH |     Via |        F.Cu |       B.Cu |
+|    15 | Round | 1.0000 mm | 1.0000 mm |    PTH |     Pad |        F.Cu |       B.Cu |
+|    11 | Round | 0.5080 mm | 0.5080 mm |    PTH |     Via |        F.Cu |       B.Cu |
+|     9 | Round | 0.3556 mm | 0.3556 mm |    PTH |     Pad |        F.Cu |       B.Cu |
+|     9 | Round | 0.2540 mm | 0.2540 mm |    PTH |     Pad |        F.Cu |       B.Cu |
+|     4 | Round | 3.2000 mm | 3.2000 mm |   NPTH |     Pad |        F.Cu |       B.Cu |
+|     2 | Round | 1.3000 mm | 1.3000 mm |    PTH |     Pad |        F.Cu |       B.Cu |
