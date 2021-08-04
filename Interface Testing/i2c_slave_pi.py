@@ -10,8 +10,10 @@
 import pigpio
 import time
 
-# idk if this is actually the right address, make sure to check this
+# pi i2c slave address
 I2C_ADDR = 0x13
+# SDA: GPIO18 (pin 19)
+# SCL: GPIO19 (pin 23)
 
 def i2c(id,tick):
 	global pi
