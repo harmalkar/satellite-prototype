@@ -54,6 +54,11 @@ Other traces
 * 0.3 mm (12 mil) power traces
 * Power planes for high current paths
 
+## Dimensions
+
+* Board size: 50x43mm (not including SMA connector)
+* Hole pattern: 43x36mm, M3 clearance hole (3.2mm diameter), screw head up to 6.5mm diameter
+
 # Original readme
 
 OpenLST Reference Hardware
