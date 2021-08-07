@@ -2,8 +2,7 @@
 
 OpenLST board for SEDS@UMD modified by Nathan Kerns. The latest version of Kicad 6 Nightlies is required to view or modify the design. Recent pdf exports of the PCB and schematic are available in the pdf folder, but may not be completely up to date.
 
-TODO:
-* Update PCB
+[Interactive BOM](https://harmalkar.github.io/satellite-prototype/ibom.html)
 
 ## BOM
 
