@@ -2,8 +2,7 @@
 
 OpenLST board for SEDS@UMD modified by Nathan Kerns. The latest version of Kicad 6 Nightlies is required to view or modify the design. Recent pdf exports of the PCB and schematic are available in the pdf folder, but may not be completely up to date.
 
-TODO:
-* Update PCB
+[Interactive BOM](https://harmalkar.github.io/satellite-prototype/ibom.html)
 
 ## BOM
 
@@ -53,6 +52,11 @@ Other traces
 * 0.2 mm (8 mil) signal traces
 * 0.3 mm (12 mil) power traces
 * Power planes for high current paths
+
+## Dimensions
+
+* Board size: 50x43mm (not including SMA connector)
+* Hole pattern: 43x36mm, M3 clearance hole (3.2mm diameter), screw head up to 6.5mm diameter
 
 # Original readme
 
