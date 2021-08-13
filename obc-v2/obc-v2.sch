@@ -1,0 +1,435 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 1750 2650 0    50   Input ~ 0
+XIN
+Text GLabel 1750 2750 0    50   Output ~ 0
+XOUT
+Text GLabel 1750 2850 0    50   Output ~ 0
+VOUT
+Text GLabel 1750 2950 0    50   Input ~ 0
+INT3
+Text GLabel 1750 3050 0    50   Input ~ 0
+INT4
+Text GLabel 1750 3150 0    50   Input ~ 0
+AIN1
+Text GLabel 1750 3250 0    50   Input ~ 0
+AIN2
+Text GLabel 1750 3350 0    50   Input ~ 0
+AIN3
+Text GLabel 3750 3850 2    50   Input ~ 0
+SWIO
+Text GLabel 3750 3750 2    50   Input ~ 0
+SWCLK
+Text GLabel 1750 3450 0    50   Output ~ 0
+MOSI
+Text GLabel 1750 3550 0    50   Input ~ 0
+MISO
+Text GLabel 1750 3650 0    50   Output ~ 0
+SCK
+Text GLabel 1750 3750 0    50   Input ~ 0
+SS*
+Text GLabel 1750 3850 0    50   Input ~ 0
+RESET*
+Text GLabel 3750 2850 2    50   BiDi ~ 0
+SDA
+Text GLabel 3750 2950 2    50   BiDi ~ 0
+SCL
+Text GLabel 3750 3250 2    50   Output ~ 0
+TX
+Text GLabel 3750 3350 2    50   Input ~ 0
+RX
+$Comp
+L MCU_Microchip_SAML_NEW:ATSAML10E16A-AF U?
+U 1 1 61106D2F
+P 2750 3250
+F 0 "U?" H 1900 4200 50  0000 C CNN
+F 1 "ATSAML10E16A-AF" H 1950 4100 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 3750 4150 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/SAM-L10L11-Family-DataSheet-DS60001513F.pdf" H 2750 3250 50  0001 C CNN
+	1    2750 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61149F54
+P 2650 1150
+F 0 "#PWR?" H 2650 1000 50  0001 C CNN
+F 1 "+3.3V" H 2665 1323 50  0000 C CNN
+F 2 "" H 2650 1150 50  0001 C CNN
+F 3 "" H 2650 1150 50  0001 C CNN
+	1    2650 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 6114A7F7
+P 2650 1550
+F 0 "R?" H 2550 1700 50  0000 L CNN
+F 1 "R_US" V 2550 1450 50  0000 L CNN
+F 2 "" V 2690 1540 50  0001 C CNN
+F 3 "~" H 2650 1550 50  0001 C CNN
+	1    2650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6114B5C3
+P 2350 1750
+F 0 "C?" V 2400 1650 50  0000 C CNN
+F 1 "10uF" V 2300 1600 50  0000 C CNN
+F 2 "" H 2388 1600 50  0001 C CNN
+F 3 "~" H 2350 1750 50  0001 C CNN
+	1    2350 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6114F91D
+P 2350 2000
+F 0 "C?" V 2300 2100 50  0000 C CNN
+F 1 "100nF" V 2400 2200 50  0000 C CNN
+F 2 "" H 2388 1850 50  0001 C CNN
+F 3 "~" H 2350 2000 50  0001 C CNN
+	1    2350 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2650 1700 2650 1750
+Wire Wire Line
+	2500 1750 2650 1750
+Connection ~ 2650 1750
+Wire Wire Line
+	2650 1750 2650 2000
+Wire Wire Line
+	2500 2000 2650 2000
+Connection ~ 2650 2000
+Wire Wire Line
+	2650 2000 2650 2250
+$Comp
+L power:GND #PWR?
+U 1 1 61151116
+P 1900 2000
+F 0 "#PWR?" H 1900 1750 50  0001 C CNN
+F 1 "GND" V 1905 1872 50  0000 R CNN
+F 2 "" H 1900 2000 50  0001 C CNN
+F 3 "" H 1900 2000 50  0001 C CNN
+	1    1900 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 2050 3050 2050
+Wire Wire Line
+	2850 2050 2850 2250
+$Comp
+L Device:C C?
+U 1 1 61151D34
+P 3200 2050
+F 0 "C?" V 3452 2050 50  0000 C CNN
+F 1 "100nF" V 3361 2050 50  0000 C CNN
+F 2 "" H 3238 1900 50  0001 C CNN
+F 3 "~" H 3200 2050 50  0001 C CNN
+	1    3200 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 611522C8
+P 3350 2050
+F 0 "#PWR?" H 3350 1800 50  0001 C CNN
+F 1 "GND" V 3355 1922 50  0000 R CNN
+F 2 "" H 3350 2050 50  0001 C CNN
+F 3 "" H 3350 2050 50  0001 C CNN
+	1    3350 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61159BEC
+P 2900 4900
+F 0 "C?" V 2950 5050 50  0000 C CNN
+F 1 "1uF" V 2850 5050 50  0000 C CNN
+F 2 "" H 2938 4750 50  0001 C CNN
+F 3 "~" H 2900 4900 50  0001 C CNN
+	1    2900 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61107CFD
+P 3450 4350
+F 0 "#PWR?" H 3450 4100 50  0001 C CNN
+F 1 "GND" H 3455 4177 50  0000 C CNN
+F 2 "" H 3450 4350 50  0001 C CNN
+F 3 "" H 3450 4350 50  0001 C CNN
+	1    3450 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6115BCFD
+P 2900 4700
+F 0 "C?" V 2648 4700 50  0000 C CNN
+F 1 "100nF" V 2739 4700 50  0000 C CNN
+F 2 "" H 2938 4550 50  0001 C CNN
+F 3 "~" H 2900 4700 50  0001 C CNN
+	1    2900 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 4250 2850 4350
+Wire Wire Line
+	2850 4350 3050 4350
+Wire Wire Line
+	2750 4250 2750 4700
+Connection ~ 2750 4700
+Wire Wire Line
+	2750 4700 2750 4900
+Wire Wire Line
+	3050 4700 3050 4350
+Connection ~ 3050 4350
+Wire Wire Line
+	3050 4350 3200 4350
+Wire Wire Line
+	3050 4900 3200 4900
+Wire Wire Line
+	3200 4900 3200 4800
+Connection ~ 3200 4350
+Wire Wire Line
+	3200 4350 3450 4350
+Connection ~ 3200 4800
+Wire Wire Line
+	3200 4800 3200 4350
+Wire Wire Line
+	2650 4250 2650 5050
+Wire Wire Line
+	2650 5050 3200 5050
+Wire Wire Line
+	3200 5050 3200 4900
+Connection ~ 3200 4900
+Wire Wire Line
+	2650 1400 2650 1300
+$Comp
+L Device:C C?
+U 1 1 61165FAE
+P 2350 1300
+F 0 "C?" V 2400 1200 50  0000 C CNN
+F 1 "10uF" V 2300 1150 50  0000 C CNN
+F 2 "" H 2388 1150 50  0001 C CNN
+F 3 "~" H 2350 1300 50  0001 C CNN
+	1    2350 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 1300 2500 1300
+Connection ~ 2650 1300
+Wire Wire Line
+	2650 1300 2650 1150
+Wire Wire Line
+	2200 2000 1900 2000
+Wire Wire Line
+	1900 2000 1900 1750
+Wire Wire Line
+	1900 1300 2200 1300
+Connection ~ 1900 2000
+Wire Wire Line
+	2200 1750 1900 1750
+Connection ~ 1900 1750
+Wire Wire Line
+	1900 1750 1900 1300
+Wire Wire Line
+	2850 2050 2850 900 
+Wire Wire Line
+	2850 900  2500 900 
+Wire Wire Line
+	2500 900  2500 1300
+Connection ~ 2850 2050
+Connection ~ 2500 1300
+$Comp
+L Oscillator:ASCO X?
+U 1 1 611689B2
+P 5350 1350
+F 0 "X?" H 5500 1700 50  0000 L CNN
+F 1 "ASCO" H 5450 1600 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_Abracon_ASCO-4Pin_1.6x1.2mm" H 5450 1000 50  0001 C CNN
+F 3 "https://abracon.com/Oscillators/ASCO.pdf" H 5125 1475 50  0001 C CNN
+	1    5350 1350
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1300 800  4150 800 
+Wire Notes Line
+	4150 800  4150 5250
+Wire Notes Line
+	4150 5250 1300 5250
+Wire Notes Line
+	1300 5250 1300 800 
+$Comp
+L power:GND #PWR?
+U 1 1 6116B41C
+P 5350 1650
+F 0 "#PWR?" H 5350 1400 50  0001 C CNN
+F 1 "GND" H 5355 1477 50  0000 C CNN
+F 2 "" H 5350 1650 50  0001 C CNN
+F 3 "" H 5350 1650 50  0001 C CNN
+	1    5350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6116B9D5
+P 5350 1050
+F 0 "#PWR?" H 5350 900 50  0001 C CNN
+F 1 "+3.3V" H 5365 1223 50  0000 C CNN
+F 2 "" H 5350 1050 50  0001 C CNN
+F 3 "" H 5350 1050 50  0001 C CNN
+	1    5350 1050
+	1    0    0    -1  
+$EndComp
+Text GLabel 5750 1350 2    50   Output ~ 0
+XIN
+Text GLabel 4950 1350 0    50   Input ~ 0
+XOUT
+Text GLabel 6250 1200 0    50   Input ~ 0
+XOUT
+Text GLabel 6250 1400 0    50   Input ~ 0
+XIN
+$Comp
+L Device:C C?
+U 1 1 6116C7F6
+P 6400 1200
+F 0 "C?" V 6350 1100 50  0000 C CNN
+F 1 "15pF" V 6350 1350 50  0000 C CNN
+F 2 "" H 6438 1050 50  0001 C CNN
+F 3 "~" H 6400 1200 50  0001 C CNN
+	1    6400 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6116CC85
+P 6400 1400
+F 0 "C?" V 6450 1300 50  0000 C CNN
+F 1 "15pF" V 6450 1550 50  0000 C CNN
+F 2 "" H 6438 1250 50  0001 C CNN
+F 3 "~" H 6400 1400 50  0001 C CNN
+	1    6400 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 1200 6800 1200
+Wire Wire Line
+	6800 1200 6800 1400
+Wire Wire Line
+	6800 1400 6550 1400
+$Comp
+L power:GND #PWR?
+U 1 1 6116E258
+P 6800 1550
+F 0 "#PWR?" H 6800 1300 50  0001 C CNN
+F 1 "GND" H 6805 1377 50  0000 C CNN
+F 2 "" H 6800 1550 50  0001 C CNN
+F 3 "" H 6800 1550 50  0001 C CNN
+	1    6800 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1400 6800 1550
+Connection ~ 6800 1400
+Text Notes 6500 1900 0    50   ~ 0
+Oscillator
+Wire Notes Line
+	7000 2000 7000 750 
+Wire Notes Line
+	7000 750  4600 750 
+Wire Notes Line
+	4600 750  4600 2000
+Wire Notes Line
+	4600 2000 7000 2000
+Text Notes 1350 5200 0    50   ~ 0
+32-bit 32MHz ARM Processor
+$Comp
+L Memory_EEPROM:AT25xxx U?
+U 1 1 61172006
+P 5500 2750
+F 0 "U?" H 5700 3100 50  0000 C CNN
+F 1 "AT25xxx" H 5700 3000 50  0000 C CNN
+F 2 "" H 5500 2750 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8707-SEEPROM-AT25010B-020B-040B-Datasheet.pdf" H 5500 2750 50  0001 C CNN
+	1    5500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 611762E7
+P 5500 3050
+F 0 "#PWR?" H 5500 2800 50  0001 C CNN
+F 1 "GND" H 5505 2877 50  0000 C CNN
+F 2 "" H 5500 3050 50  0001 C CNN
+F 3 "" H 5500 3050 50  0001 C CNN
+	1    5500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 611767CC
+P 5500 2450
+F 0 "#PWR?" H 5500 2300 50  0001 C CNN
+F 1 "+3.3V" H 5515 2623 50  0000 C CNN
+F 2 "" H 5500 2450 50  0001 C CNN
+F 3 "" H 5500 2450 50  0001 C CNN
+	1    5500 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 5900 2750 2    50   Input ~ 0
+MOSI
+Text GLabel 5900 2850 2    50   Output ~ 0
+MISO
+Text GLabel 5900 2650 2    50   Input ~ 0
+SCK
+$Comp
+L power:+3.3V #PWR?
+U 1 1 611772E8
+P 5000 2650
+F 0 "#PWR?" H 5000 2500 50  0001 C CNN
+F 1 "+3.3V" V 5015 2778 50  0000 L CNN
+F 2 "" H 5000 2650 50  0001 C CNN
+F 3 "" H 5000 2650 50  0001 C CNN
+	1    5000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2650 5000 2750
+Wire Wire Line
+	5000 2850 5100 2850
+Wire Wire Line
+	5000 2750 5100 2750
+Connection ~ 5000 2750
+Wire Wire Line
+	5000 2750 5000 2850
+Wire Wire Line
+	5000 2650 5100 2650
+Connection ~ 5000 2650
+Wire Notes Line
+	4850 2200 6200 2200
+Wire Notes Line
+	6200 2200 6200 3400
+Wire Notes Line
+	6200 3400 4850 3400
+Wire Notes Line
+	4850 3400 4850 2200
+Text Notes 4900 3350 0    50   ~ 0
+4MB Flash Memory
+$EndSCHEMATC
