@@ -373,4 +373,15 @@ Wire Notes Line
 	1300 4550 4150 4550
 Wire Notes Line
 	4150 800  4150 4550
+$Comp
+L bmi088:BMI088 U?
+U 1 1 6126D77D
+P 7250 2700
+F 0 "U?" H 7200 3281 50  0000 C CNN
+F 1 "BMI088" H 7200 3190 50  0000 C CNN
+F 2 "Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm" H 7250 2700 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMI160-DS000.pdf" H 6550 3550 50  0001 C CNN
+	1    7250 2700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
