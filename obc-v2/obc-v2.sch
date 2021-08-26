@@ -373,15 +373,165 @@ Wire Notes Line
 	1300 4550 4150 4550
 Wire Notes Line
 	4150 800  4150 4550
+Text GLabel 7450 3300 0    50   BiDi ~ 0
+SDA
+Text GLabel 7450 3200 0    50   Input ~ 0
+SCL
+Text GLabel 7450 3400 0    50   Output ~ 0
+ACCEL
+Text GLabel 7450 3500 0    50   Output ~ 0
+GYRO
+NoConn ~ 7450 3700
+$Comp
+L power:GND #PWR?
+U 1 1 612718CF
+P 7550 4200
+F 0 "#PWR?" H 7550 3950 50  0001 C CNN
+F 1 "GND" H 7555 4027 50  0000 C CNN
+F 2 "" H 7550 4200 50  0001 C CNN
+F 3 "" H 7550 4200 50  0001 C CNN
+	1    7550 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3900 7450 4200
+Wire Wire Line
+	7450 4200 7550 4200
+Wire Wire Line
+	7950 4200 7950 4100
+Connection ~ 7550 4200
+Wire Wire Line
+	7550 4200 7850 4200
+Wire Wire Line
+	7850 4100 7850 4200
+Connection ~ 7850 4200
+Wire Wire Line
+	7850 4200 7950 4200
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61272ED0
+P 7300 3600
+F 0 "#PWR?" H 7300 3450 50  0001 C CNN
+F 1 "+3V3" V 7315 3728 50  0000 L CNN
+F 2 "" H 7300 3600 50  0001 C CNN
+F 3 "" H 7300 3600 50  0001 C CNN
+	1    7300 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7450 3600 7300 3600
+Wire Wire Line
+	7300 3600 7300 3800
+Wire Wire Line
+	7300 3800 7450 3800
+Connection ~ 7300 3600
+Text GLabel 8350 3300 2    50   BiDi ~ 0
+INT1_ACCEL
+Text GLabel 8350 3400 2    50   BiDi ~ 0
+INT2_ACCEL
 $Comp
 L bmi088:BMI088 U?
 U 1 1 6126D77D
-P 7250 2700
-F 0 "U?" H 7200 3281 50  0000 C CNN
-F 1 "BMI088" H 7200 3190 50  0000 C CNN
-F 2 "Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm" H 7250 2700 50  0001 C CNN
-F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMI160-DS000.pdf" H 6550 3550 50  0001 C CNN
-	1    7250 2700
+P 7950 3400
+F 0 "U?" H 8250 2750 50  0000 C CNN
+F 1 "BMI088" H 8250 2650 50  0000 C CNN
+F 2 "Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm" H 7950 3400 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMI160-DS000.pdf" H 7250 4250 50  0001 C CNN
+	1    7950 3400
 	1    0    0    -1  
 $EndComp
+Text GLabel 8350 3500 2    50   Output ~ 0
+INT3_GYRO
+Text GLabel 8350 3600 2    50   Output ~ 0
+INT4_GYRO
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61277D25
+P 7600 2550
+F 0 "#PWR?" H 7600 2400 50  0001 C CNN
+F 1 "+3V3" H 7615 2723 50  0000 C CNN
+F 2 "" H 7600 2550 50  0001 C CNN
+F 3 "" H 7600 2550 50  0001 C CNN
+	1    7600 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 612781FE
+P 8100 2550
+F 0 "#PWR?" H 8100 2400 50  0001 C CNN
+F 1 "+3V3" H 8115 2723 50  0000 C CNN
+F 2 "" H 8100 2550 50  0001 C CNN
+F 3 "" H 8100 2550 50  0001 C CNN
+	1    8100 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 612799A4
+P 7600 2700
+F 0 "C?" H 7450 2800 50  0000 L CNN
+F 1 "100nF" H 7350 2600 50  0000 L CNN
+F 2 "" H 7638 2550 50  0001 C CNN
+F 3 "~" H 7600 2700 50  0001 C CNN
+	1    7600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6127A006
+P 8100 2700
+F 0 "C?" H 8215 2746 50  0000 L CNN
+F 1 "100nF" H 8215 2655 50  0000 L CNN
+F 2 "" H 8138 2550 50  0001 C CNN
+F 3 "~" H 8100 2700 50  0001 C CNN
+	1    8100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6127AE14
+P 7600 2850
+F 0 "#PWR?" H 7600 2600 50  0001 C CNN
+F 1 "GND" H 7605 2677 50  0000 C CNN
+F 2 "" H 7600 2850 50  0001 C CNN
+F 3 "" H 7600 2850 50  0001 C CNN
+	1    7600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6127B677
+P 8100 2850
+F 0 "#PWR?" H 8100 2600 50  0001 C CNN
+F 1 "GND" H 8105 2677 50  0000 C CNN
+F 2 "" H 8100 2850 50  0001 C CNN
+F 3 "" H 8100 2850 50  0001 C CNN
+	1    8100 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2550 7850 2550
+Wire Wire Line
+	7850 2550 7850 3000
+Connection ~ 7600 2550
+Wire Wire Line
+	8100 2550 7950 2550
+Wire Wire Line
+	7950 2550 7950 3000
+Connection ~ 8100 2550
+Wire Notes Line
+	7000 2250 7000 4450
+Wire Notes Line
+	7000 4450 9050 4450
+Wire Notes Line
+	9050 4450 9050 2250
+Wire Notes Line
+	9050 2250 7000 2250
+Text Notes 8850 4400 0    50   ~ 0
+IMU
+Text GLabel 1750 2650 0    50   Input ~ 0
+ACCEL
+Text GLabel 1750 2750 0    50   Input ~ 0
+GYRO
 $EndSCHEMATC
