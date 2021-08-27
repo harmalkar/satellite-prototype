@@ -25,7 +25,7 @@ Text GLabel 1750 3550 0    50   Input ~ 0
 MISO
 Text GLabel 1750 3650 0    50   Output ~ 0
 SCK
-Text GLabel 1750 3750 0    50   Input ~ 0
+Text GLabel 1750 3750 0    50   Output ~ 0
 SS*
 Text GLabel 1750 3850 0    50   Input ~ 0
 RESET*
@@ -37,17 +37,6 @@ Text GLabel 3750 3250 2    50   Output ~ 0
 TX
 Text GLabel 3750 3350 2    50   Input ~ 0
 RX
-$Comp
-L MCU_Microchip_SAML_NEW:ATSAML10E16A-AF U?
-U 1 1 61106D2F
-P 2750 3250
-F 0 "U?" H 1900 4200 50  0000 C CNN
-F 1 "ATSAML10E16A-AF" H 1950 4100 50  0000 C CNN
-F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 3750 4150 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/SAM-L10L11-Family-DataSheet-DS60001513F.pdf" H 2750 3250 50  0001 C CNN
-	1    2750 3250
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 61149F54
@@ -190,8 +179,6 @@ F 3 "https://abracon.com/Oscillators/ASCO.pdf" H 5125 1475 50  0001 C CNN
 	1    5350 1350
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	1300 800  4150 800 
 $Comp
 L power:GND #PWR?
 U 1 1 6116B41C
@@ -281,12 +268,7 @@ $EndComp
 Wire Wire Line
 	5000 2650 5000 2750
 Wire Wire Line
-	5000 2850 5100 2850
-Wire Wire Line
 	5000 2750 5100 2750
-Connection ~ 5000 2750
-Wire Wire Line
-	5000 2750 5000 2850
 Wire Wire Line
 	5000 2650 5100 2650
 Connection ~ 5000 2650
@@ -368,19 +350,13 @@ Wire Wire Line
 Wire Wire Line
 	2800 4250 2800 4350
 Wire Notes Line
-	1300 800  1300 4550
-Wire Notes Line
-	1300 4550 4150 4550
+	1200 800  1200 4550
 Wire Notes Line
 	4150 800  4150 4550
 Text GLabel 7450 3300 0    50   BiDi ~ 0
 SDA
 Text GLabel 7450 3200 0    50   Input ~ 0
 SCL
-Text GLabel 7450 3400 0    50   Output ~ 0
-ACCEL
-Text GLabel 7450 3500 0    50   Output ~ 0
-GYRO
 NoConn ~ 7450 3700
 $Comp
 L power:GND #PWR?
@@ -425,9 +401,9 @@ Wire Wire Line
 Wire Wire Line
 	7300 3800 7450 3800
 Connection ~ 7300 3600
-Text GLabel 8350 3300 2    50   BiDi ~ 0
+Text GLabel 8350 3300 2    50   Output ~ 0
 INT1_ACCEL
-Text GLabel 8350 3400 2    50   BiDi ~ 0
+Text GLabel 8350 3400 2    50   Output ~ 0
 INT2_ACCEL
 $Comp
 L bmi088:BMI088 U?
@@ -521,17 +497,47 @@ Wire Wire Line
 	7950 2550 7950 3000
 Connection ~ 8100 2550
 Wire Notes Line
-	7000 2250 7000 4450
-Wire Notes Line
-	7000 4450 9050 4450
+	6900 2250 6900 4450
 Wire Notes Line
 	9050 4450 9050 2250
-Wire Notes Line
-	9050 2250 7000 2250
 Text Notes 8850 4400 0    50   ~ 0
 IMU
+Wire Wire Line
+	7450 3400 7300 3400
+Wire Wire Line
+	7450 3500 7300 3500
+Wire Wire Line
+	7300 3400 7300 3500
+Connection ~ 7300 3500
+Wire Wire Line
+	7300 3500 7300 3600
 Text GLabel 1750 2650 0    50   Input ~ 0
-ACCEL
+INT1_ACCEL
 Text GLabel 1750 2750 0    50   Input ~ 0
-GYRO
+INT2_ACCEL
+Text GLabel 1750 2850 0    50   Input ~ 0
+INT3_GYRO
+Text GLabel 1750 2950 0    50   Input ~ 0
+INT4_GYRO
+$Comp
+L MCU_Microchip_SAML_NEW:ATSAML10E16A-AF U?
+U 1 1 61106D2F
+P 2750 3250
+F 0 "U?" H 1900 4200 50  0000 C CNN
+F 1 "ATSAML10E16A-AF" H 1950 4100 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 3750 4150 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/SAM-L10L11-Family-DataSheet-DS60001513F.pdf" H 2750 3250 50  0001 C CNN
+	1    2750 3250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1200 4550 4150 4550
+Wire Notes Line
+	1200 800  4150 800 
+Text GLabel 5100 2850 0    50   Input ~ 0
+SS*
+Wire Notes Line
+	6900 4450 9050 4450
+Wire Notes Line
+	6900 2250 9050 2250
 $EndSCHEMATC
