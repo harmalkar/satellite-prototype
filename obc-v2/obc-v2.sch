@@ -593,4 +593,51 @@ Wire Notes Line
 	8450 2050 10050 2050
 Text Notes 9600 2000 0    50   ~ 0
 Barometer
+$Comp
+L DS2845:DS2485 U?
+U 1 1 6129E0CF
+P 5400 4350
+F 0 "U?" H 5100 4700 50  0000 C CNN
+F 1 "DS2485" H 5150 4600 50  0000 C CNN
+F 2 "" H 5450 4500 50  0001 C CNN
+F 3 "" H 5450 4500 50  0001 C CNN
+	1    5400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6129E849
+P 5400 4700
+F 0 "#PWR?" H 5400 4450 50  0001 C CNN
+F 1 "GND" H 5405 4527 50  0000 C CNN
+F 2 "" H 5400 4700 50  0001 C CNN
+F 3 "" H 5400 4700 50  0001 C CNN
+	1    5400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6129EE3F
+P 5400 4050
+F 0 "#PWR?" H 5400 3900 50  0001 C CNN
+F 1 "+3V3" H 5415 4223 50  0000 C CNN
+F 2 "" H 5400 4050 50  0001 C CNN
+F 3 "" H 5400 4050 50  0001 C CNN
+	1    5400 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 5800 4300 2    50   BiDi ~ 0
+SDA
+Text GLabel 5800 4400 2    50   BiDi ~ 0
+SCL
+Wire Notes Line
+	4850 3750 6150 3750
+Wire Notes Line
+	6150 3750 6150 4950
+Wire Notes Line
+	6150 4950 4850 4950
+Wire Notes Line
+	4850 4950 4850 3750
+Text Notes 5500 4900 0    50   ~ 0
+1-wire Interface
 $EndSCHEMATC
