@@ -640,4 +640,33 @@ Wire Notes Line
 	4850 4950 4850 3750
 Text Notes 5500 4900 0    50   ~ 0
 1-wire Interface
+$Comp
+L Switch:SW_Push_Dual SW?
+U 1 1 612A144F
+P 1600 1150
+F 0 "SW?" H 1600 1435 50  0000 C CNN
+F 1 "SW_Push_Dual" H 1600 1344 50  0000 C CNN
+F 2 "" H 1600 1350 50  0001 C CNN
+F 3 "~" H 1600 1350 50  0001 C CNN
+	1    1600 1150
+	1    0    0    -1  
+$EndComp
+Text GLabel 1800 1350 3    50   BiDi ~ 0
+RESET*
+$Comp
+L power:GND #PWR?
+U 1 1 61309369
+P 1400 1350
+F 0 "#PWR?" H 1400 1100 50  0001 C CNN
+F 1 "GND" H 1405 1177 50  0000 C CNN
+F 2 "" H 1400 1350 50  0001 C CNN
+F 3 "" H 1400 1350 50  0001 C CNN
+	1    1400 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1150 1400 1350
+Connection ~ 1400 1350
+Wire Wire Line
+	1800 1150 1800 1350
 $EndSCHEMATC
