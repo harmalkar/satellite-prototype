@@ -220,7 +220,7 @@ L obc-v2-rescue:AT25xxx-Memory_EEPROM U?
 U 1 1 61172006
 P 5500 2750
 F 0 "U?" H 5700 3100 50  0000 C CNN
-F 1 "AT25xxx" H 5700 3000 50  0000 C CNN
+F 1 "W25N01GVZEIG" H 5850 3000 50  0000 C CNN
 F 2 "" H 5500 2750 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8707-SEEPROM-AT25010B-020B-040B-Datasheet.pdf" H 5500 2750 50  0001 C CNN
 	1    5500 2750
@@ -281,7 +281,7 @@ Wire Notes Line
 Wire Notes Line
 	4850 3400 4850 2200
 Text Notes 4900 3350 0    50   ~ 0
-4MB Flash Memory
+1GB Flash Memory
 $Comp
 L obc-v2-rescue:Ferrite_Bead-Device FB?
 U 1 1 611AF1D7
