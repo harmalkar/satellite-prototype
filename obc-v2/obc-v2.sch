@@ -1494,4 +1494,58 @@ Wire Notes Line
 	8350 5200 7100 5200
 Wire Notes Line
 	7100 5200 7100 6150
+$Comp
+L Device:R_US R?
+U 1 1 614E4A8D
+P 6650 5700
+F 0 "R?" H 6700 5850 50  0000 L CNN
+F 1 "10k" V 6750 5600 50  0000 L CNN
+F 2 "" V 6690 5690 50  0001 C CNN
+F 3 "~" H 6650 5700 50  0001 C CNN
+	1    6650 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 614E4DBC
+P 6350 5700
+F 0 "R?" H 6200 5850 50  0000 L CNN
+F 1 "10k" V 6250 5600 50  0000 L CNN
+F 2 "" V 6390 5690 50  0001 C CNN
+F 3 "~" H 6350 5700 50  0001 C CNN
+	1    6350 5700
+	1    0    0    -1  
+$EndComp
+Text GLabel 6350 5850 3    50   Input ~ 0
+SDA
+Text GLabel 6650 5850 3    50   Input ~ 0
+SCL
+$Comp
+L power:+3V3 #PWR?
+U 1 1 614E84A3
+P 6350 5450
+F 0 "#PWR?" H 6350 5300 50  0001 C CNN
+F 1 "+3V3" H 6365 5623 50  0000 C CNN
+F 2 "" H 6350 5450 50  0001 C CNN
+F 3 "" H 6350 5450 50  0001 C CNN
+	1    6350 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5550 6350 5450
+Wire Wire Line
+	6650 5550 6650 5450
+Wire Wire Line
+	6650 5450 6350 5450
+Connection ~ 6350 5450
+Text Notes 6250 6250 0    50   ~ 0
+I2C Pull-Up\nResistors
+Wire Notes Line
+	6850 5200 6850 6300
+Wire Notes Line
+	6850 6300 6150 6300
+Wire Notes Line
+	6150 6300 6150 5200
+Wire Notes Line
+	6150 5200 6850 5200
 $EndSCHEMATC
