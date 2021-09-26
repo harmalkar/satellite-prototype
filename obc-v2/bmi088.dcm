@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BMI088
+D Small, low power inertial measurement unit, LGA-14
+K Bosh IMU small low power inertial measurement unit
+F https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMI160-DS000.pdf
+$ENDCMP
+#
+#End Doc Library
