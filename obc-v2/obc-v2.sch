@@ -1551,19 +1551,6 @@ Wire Notes Line
 $Comp
 L Connector:TestPoint TP?
 U 1 1 6165481C
-P 4200 4950
-F 0 "TP?" V 4200 5550 50  0000 L CNN
-F 1 "TestPoint" V 4200 5150 50  0000 L CNN
-F 2 "" H 4400 4950 50  0001 C CNN
-F 3 "" H 4400 4950 50  0001 C CNN
-	1    4200 4950
-	0    -1   -1   0   
-$EndComp
-Text GLabel 4200 4950 2    50   Input ~ 0
-SDA
-$Comp
-L Connector:TestPoint TP?
-U 1 1 616A4E70
 P 4200 5100
 F 0 "TP?" V 4200 5700 50  0000 L CNN
 F 1 "TestPoint" V 4200 5300 50  0000 L CNN
@@ -1573,10 +1560,10 @@ F 3 "" H 4400 5100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 4200 5100 2    50   Input ~ 0
-SCL
+SDA
 $Comp
 L Connector:TestPoint TP?
-U 1 1 616A8E8A
+U 1 1 616A4E70
 P 4200 5250
 F 0 "TP?" V 4200 5850 50  0000 L CNN
 F 1 "TestPoint" V 4200 5450 50  0000 L CNN
@@ -1586,10 +1573,10 @@ F 3 "" H 4400 5250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 4200 5250 2    50   Input ~ 0
-MISO
+SCL
 $Comp
 L Connector:TestPoint TP?
-U 1 1 616A8E91
+U 1 1 616A8E8A
 P 4200 5400
 F 0 "TP?" V 4200 6000 50  0000 L CNN
 F 1 "TestPoint" V 4200 5600 50  0000 L CNN
@@ -1599,10 +1586,10 @@ F 3 "" H 4400 5400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 4200 5400 2    50   Input ~ 0
-MOSI
+MISO
 $Comp
 L Connector:TestPoint TP?
-U 1 1 616AD625
+U 1 1 616A8E91
 P 4200 5550
 F 0 "TP?" V 4200 6150 50  0000 L CNN
 F 1 "TestPoint" V 4200 5750 50  0000 L CNN
@@ -1612,10 +1599,10 @@ F 3 "" H 4400 5550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 4200 5550 2    50   Input ~ 0
-SCK
+MOSI
 $Comp
 L Connector:TestPoint TP?
-U 1 1 616AD62C
+U 1 1 616AD625
 P 4200 5700
 F 0 "TP?" V 4200 6300 50  0000 L CNN
 F 1 "TestPoint" V 4200 5900 50  0000 L CNN
@@ -1625,10 +1612,10 @@ F 3 "" H 4400 5700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 4200 5700 2    50   Input ~ 0
-CS*
+SCK
 $Comp
 L Connector:TestPoint TP?
-U 1 1 616AD633
+U 1 1 616AD62C
 P 4200 5850
 F 0 "TP?" V 4200 6450 50  0000 L CNN
 F 1 "TestPoint" V 4200 6050 50  0000 L CNN
@@ -1638,10 +1625,10 @@ F 3 "" H 4400 5850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 4200 5850 2    50   Input ~ 0
-TX
+CS*
 $Comp
 L Connector:TestPoint TP?
-U 1 1 616AD63A
+U 1 1 616AD633
 P 4200 6000
 F 0 "TP?" V 4200 6600 50  0000 L CNN
 F 1 "TestPoint" V 4200 6200 50  0000 L CNN
@@ -1651,10 +1638,10 @@ F 3 "" H 4400 6000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 4200 6000 2    50   Input ~ 0
-RX
+TX
 $Comp
 L Connector:TestPoint TP?
-U 1 1 616B2BB2
+U 1 1 616AD63A
 P 4200 6150
 F 0 "TP?" V 4200 6750 50  0000 L CNN
 F 1 "TestPoint" V 4200 6350 50  0000 L CNN
@@ -1664,10 +1651,10 @@ F 3 "" H 4400 6150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 4200 6150 2    50   Input ~ 0
-THERMAL
+RX
 $Comp
 L Connector:TestPoint TP?
-U 1 1 616B2BB9
+U 1 1 616B2BB2
 P 4200 6300
 F 0 "TP?" V 4200 6900 50  0000 L CNN
 F 1 "TestPoint" V 4200 6500 50  0000 L CNN
@@ -1677,10 +1664,10 @@ F 3 "" H 4400 6300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 4200 6300 2    50   Input ~ 0
-INT1_ACCEL
+THERMAL
 $Comp
 L Connector:TestPoint TP?
-U 1 1 616B2BC0
+U 1 1 616B2BB9
 P 4200 6450
 F 0 "TP?" V 4200 7050 50  0000 L CNN
 F 1 "TestPoint" V 4200 6650 50  0000 L CNN
@@ -1690,10 +1677,10 @@ F 3 "" H 4400 6450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 4200 6450 2    50   Input ~ 0
-INT2_ACCEL
+INT1_ACCEL
 $Comp
 L Connector:TestPoint TP?
-U 1 1 616B2BC7
+U 1 1 616B2BC0
 P 4200 6600
 F 0 "TP?" V 4200 7200 50  0000 L CNN
 F 1 "TestPoint" V 4200 6800 50  0000 L CNN
@@ -1703,10 +1690,10 @@ F 3 "" H 4400 6600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 4200 6600 2    50   Input ~ 0
-INT3_GYRO
+INT2_ACCEL
 $Comp
 L Connector:TestPoint TP?
-U 1 1 616B2BCE
+U 1 1 616B2BC7
 P 4200 6750
 F 0 "TP?" V 4200 7350 50  0000 L CNN
 F 1 "TestPoint" V 4200 6950 50  0000 L CNN
@@ -1716,15 +1703,76 @@ F 3 "" H 4400 6750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 4200 6750 2    50   Input ~ 0
+INT3_GYRO
+$Comp
+L Connector:TestPoint TP?
+U 1 1 616B2BCE
+P 4200 6900
+F 0 "TP?" V 4200 7500 50  0000 L CNN
+F 1 "TestPoint" V 4200 7100 50  0000 L CNN
+F 2 "" H 4400 6900 50  0001 C CNN
+F 3 "" H 4400 6900 50  0001 C CNN
+	1    4200 6900
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4200 6900 2    50   Input ~ 0
 INT4_GYRO
-Text Notes 4300 6950 0    50   ~ 0
+Text Notes 4350 7400 0    50   ~ 0
 Test Pads
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61552B8D
+P 4200 4950
+F 0 "TP?" V 4200 5550 50  0000 L CNN
+F 1 "TestPoint" V 4200 5150 50  0000 L CNN
+F 2 "" H 4400 4950 50  0001 C CNN
+F 3 "" H 4400 4950 50  0001 C CNN
+	1    4200 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61552B94
+P 4200 7050
+F 0 "TP?" V 4200 7650 50  0000 L CNN
+F 1 "TestPoint" V 4200 7250 50  0000 L CNN
+F 2 "" H 4400 7050 50  0001 C CNN
+F 3 "" H 4400 7050 50  0001 C CNN
+	1    4200 7050
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4200 7050 2    50   Input ~ 0
+VDDANA
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61552B9B
+P 4200 7200
+F 0 "TP?" V 4200 7800 50  0000 L CNN
+F 1 "TestPoint" V 4200 7400 50  0000 L CNN
+F 2 "" H 4400 7200 50  0001 C CNN
+F 3 "" H 4400 7200 50  0001 C CNN
+	1    4200 7200
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4200 7200 2    50   Input ~ 0
+VMEAS
+$Comp
+L obc-v2-rescue:+3.3V-power #PWR?
+U 1 1 6155F497
+P 4200 4950
+F 0 "#PWR?" H 4200 4800 50  0001 C CNN
+F 1 "+3.3V" H 4350 5000 50  0000 C CNN
+F 2 "" H 4200 4950 50  0001 C CNN
+F 3 "" H 4200 4950 50  0001 C CNN
+	1    4200 4950
+	1    0    0    -1  
+$EndComp
 Wire Notes Line
-	4700 7000 4700 4850
+	3400 4800 4750 4800
 Wire Notes Line
-	4700 4850 3400 4850
+	4750 4800 4750 7450
 Wire Notes Line
-	3400 4850 3400 7000
+	3400 7450 4750 7450
 Wire Notes Line
-	3400 7000 4700 7000
+	3400 4800 3400 7450
 $EndSCHEMATC
