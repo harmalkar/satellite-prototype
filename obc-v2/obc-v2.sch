@@ -861,23 +861,23 @@ Wire Wire Line
 	10100 1100 10100 900 
 Wire Wire Line
 	10100 900  9500 900 
-Text GLabel 3050 2350 2    50   Input ~ 0
+Text GLabel 1050 1750 0    50   Input ~ 0
 GPIO0
 Text GLabel 1050 1850 0    50   Input ~ 0
 GPIO1
 Text GLabel 1050 1950 0    50   Input ~ 0
 GPIO2
-Text GLabel 1050 2050 0    50   Input ~ 0
-GPIO3
 Text GLabel 3050 1450 2    50   Input ~ 0
-GPIO4
+GPIO3
 Text GLabel 3050 1750 2    50   Input ~ 0
-GPIO5
+GPIO4
 Text GLabel 3050 1850 2    50   Input ~ 0
-GPIO6
+GPIO5
 Text GLabel 3050 2150 2    50   Input ~ 0
-GPIO7
+GPIO6
 Text GLabel 3050 2250 2    50   Input ~ 0
+GPIO7
+Text GLabel 3050 2350 2    50   Input ~ 0
 GPIO8
 Text GLabel 4150 850  2    50   Input ~ 0
 GPIO4
@@ -1234,7 +1234,7 @@ F 3 "" H 5200 2550 50  0001 C CNN
 	1    5200 2550
 	1    0    0    -1  
 $EndComp
-Text GLabel 1050 1750 0    50   Input ~ 0
+Text GLabel 1050 2050 0    50   Input ~ 0
 VMEAS
 Text GLabel 8700 5100 1    50   Input ~ 0
 VIN
